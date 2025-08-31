@@ -1,0 +1,203 @@
+// HTML CODE //
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Shashank Priyadarshi</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+
+  <section id="about">
+    <img src="sp18pht.jpg" alt="Jane Doe" class="profile-img">
+    <div>
+      <h2>About Me</h2>
+      <h5>
+       I’m a passionate web developer with a strong focus on creating clean, responsive, and user-friendly digital experiences. Skilled in both front-end and back-end development, I enjoy bringing ideas to life through modern technologies such as HTML, CSS, JavaScript, React.js, and Node.js.
+      </h5>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2><u>Skills</u></h2>
+    <ul>
+      <li>HTML &amp; CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>React JS</li>
+      <li>Java</li>
+      <li>C++</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2><u>Projects</u></h2>
+    <div class="project">
+      <img src="https://www.digitalvidya.com/blog/wp-content/uploads/2019/03/personal-blog-1024x538.jpg" alt="Project 1">
+      <div>
+        <h3>Personal Blog</h3>
+        <p>A responsive blog website built with HTML and CSS.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/squarespace-portfolio-website-builder.jpg" alt="Project 2">
+      <div>
+        <h3>Portfolio Website</h3>
+        <p>Showcase of my projects and skills as a web developer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2><u>Resume</u></h2>
+    <a href="resume.pdf" download>Download My Resume (PDF)</a>
+  </section>
+
+  <section id="contact">
+    <h2><u>Contact</u></h2>
+    <p>Email: shashank.kvs2019@gmail.com </p>
+    <p>Phone: 886996XXXX </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shashank Priyadarshi . All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+// CSS CODE //
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #FFFFFF;
+  color: #222;
+}
+
+header {
+  background:#98F5F9;
+  color:#000000;
+  padding: 2em 0 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(41, 80, 187, 0.05);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 0px;
+  object-fit: cover;
+  border: 3px solid #FFFFFF;
+}
+
+#about h2 {
+  margin-top: 0;
+}
+
+section {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(41, 80, 187, 0.05);
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+#skills li {
+  background: #B0F7FB;
+  color: #2950bb;
+  padding: 0.6em 1.2em;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+#projects .project {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  margin-bottom: 1em;
+}
+
+#projects img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #e4eafc;
+}
+
+#resume a {
+  color: #2950bb;
+  font-weight: bold;
+  text-decoration: none;
+  background: #e4eafc;
+  padding: 0.6em 1em;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+#resume a:hover {
+  background: #2950bb;
+  color: #fff;
+}
+
+#contact p {
+  margin: 0.4em 0;
+}
+
+footer {
+  text-align: center;
+  background: #98F5F9;
+  color: #000000;
+  padding: 1em 0;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-top: 2em;
+}
+
+@media (max-width: 700px) {
+  #about, #projects .project {
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+  }
+  section {
+    padding: 0.6em;
+  }
+}
+
