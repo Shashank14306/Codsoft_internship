@@ -1,0 +1,133 @@
+// HTML CODE //
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyBrand</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Website</h1>
+      <p>Your success is our priority. Let's grow together!</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      We provide professional services to help your business grow. 
+      Our team focuses on delivering high-quality results with modern solutions.
+    </p>
+  </section>
+  <footer>
+    <p>© 2025 MyBrand. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+// CSS CODE //
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  line-height: 1.6;
+  color: #333;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px 50px;
+}
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #ff9800;
+}
+.hero {
+  background: url('https://picsum.photos/1920/1080?blur') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff9800;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #e68900;
+}
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
+
+
